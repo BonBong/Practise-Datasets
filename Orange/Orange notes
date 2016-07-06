@@ -1,0 +1,50 @@
+#Scatter plot using qplot()
+qplot(x = age,
++       y = circumference,
++       data = nu.df,
++       colour = Tree,
++       main = "Relationship between age and trunk circumference of orange trees in different locations",
++       xlab = "Age (years)",
++       xlim = c(116, 1590),
++       ylab = "Trunk circumference (metres)",
++       ylim = c(25, 220))
+
+#Scatter plot using base R:
+plot(nu.df$age, nu.df$circumference,
++      col = nu.df$Tree,
++      main =  "The Relationship between age and trunk circumference of orange trees grown in different locations.",
++      xlab = "Age (years)",
++ xlim = c(110, 1590),
++ ylab = "Trunk Circumference",
++ ylim = c(25, 220))
+
+#Boxplot using qplot():
+qplot(x = age,
++       y = circumference,
++       data = nu.df,
++       colour = Tree,
++       main = "Relationship between age and trunk circumference of orange trees in different locations",
++       xlab = "Age (years)",
++       xlim = c(116, 1590),
++       ylab = "Trunk circumference (metres)",
++       ylim = c(25, 220),
++       geom = "boxplot")
+
+#Line graph using qplo():
+qplot(x = age,
++       y = circumference,
++       data = nu.df,
++       colour = Tree,
++       main = "Relationship between age and trunk circumference of orange trees in different locations",
++       xlab = "Age (years)",
++       xlim = c(116, 1590),
++       ylab = "Trunk circumference (metres)",
++       ylim = c(25, 220),
++       geom = "line")
+
+#2-way ANOVA
+foo <- aov(circumference ~ age + Tree,
++     data = nu.df)
+> summary(foo)
+
+

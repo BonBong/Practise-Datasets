@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#Scatter plot using qplot()\nqplot(x = age,\n+       y = circumference,\n+       data = nu.df,\n+       colour = Tree,\n+       main = \"Relationship between age and trunk circumference of orange trees in different locations\",\n+       xlab = \"Age (years)\",\n+       xlim = c(116, 1590),\n+       ylab = \"Trunk circumference (metres)\",\n+       ylim = c(25, 220))\n\n#Scatter plot using base R:\nplot(nu.df$age, nu.df$circumference,\n+      col = nu.df$Tree,\n+      main =  \"The Relationship between age and trunk circumference of orange trees grown in different locations.\",\n+      xlab = \"Age (years)\",\n+ xlim = c(110, 1590),\n+ ylab = \"Trunk Circumference\",\n+ ylim = c(25, 220))\n\n#Boxplot using qplot():\nqplot(x = age,\n+       y = circumference,\n+       data = nu.df,\n+       colour = Tree,\n+       main = \"Relationship between age and trunk circumference of orange trees in different locations\",\n+       xlab = \"Age (years)\",\n+       xlim = c(116, 1590),\n+       ylab = \"Trunk circumference (metres)\",\n+       ylim = c(25, 220),\n+       geom = \"boxplot\")\n\n#Line graph using qplo():\nqplot(x = age,\n+       y = circumference,\n+       data = nu.df,\n+       colour = Tree,\n+       main = \"Relationship between age and trunk circumference of orange trees in different locations\",\n+       xlab = \"Age (years)\",\n+       xlim = c(116, 1590),\n+       ylab = \"Trunk circumference (metres)\",\n+       ylim = c(25, 220),\n+       geom = \"line\")\n\n#2-way ANOVA\nfoo <- aov(circumference ~ age + Tree,\n+     data = nu.df)\n> summary(foo)\n\n\n",
+    "created" : 1467720353463.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "888347160",
+    "id" : "68F31F05",
+    "lastKnownWriteTime" : 1467722013,
+    "last_content_update" : 1467722013116,
+    "path" : "~/STATS STUFF/Practise/A/Orange/Orange notes",
+    "project_path" : "Orange notes",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}

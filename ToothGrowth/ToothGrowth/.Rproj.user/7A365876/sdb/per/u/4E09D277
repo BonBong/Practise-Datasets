@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#Relationship conditionality\ncoplot(len~dose | supp,\n       +        data = tooth,\n       +        panel = panel.smooth,\n       +        xlab = \"Tooth Growth data: length vs dose, given type of supplement\")\n> \n#Side-by-side plots showing the effect of supplements and supplement doses\n  on tooth growth.\npar(mfrow=c(1,2))\n> boxplot(tooth$len~tooth$supp, main = \"Effect of the supplements on length\",\n           +         xlab = \"Supplement\",\n           +         ylab =\"Tooth Length (mm)\")\nplot(tooth$len~tooth$dose, col = tooth$supp, main = \"Effect of supplement doses on length\",\n     +      xlab = \"Supplement Dose\",\n     +      ylab = \"\")\n> ",
+    "created" : 1467722765308.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "2476852828",
+    "id" : "4E09D277",
+    "lastKnownWriteTime" : 8102047400589151809,
+    "last_content_update" : 1467724210664,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
